@@ -26,24 +26,16 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    //Support Design
     compile 'com.android.support:design:25.3.0'
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support:support-v4:25.3.0'
-
-    //ButterKnife Library
     compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
-
-    //EventBus Library
     compile 'org.greenrobot:eventbus:3.0.0'
-
-    //Other Libraries
     compile 'com.google.android.gms:play-services-maps:10.2.0'
     compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'com.google.code.gson:gson:2.8.0'
-
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
-    testCompile 'junit:junit:4.12'
     compile 'org.jetbrains:annotations-java5:15.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
 }
