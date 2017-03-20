@@ -2,12 +2,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.original.codigo.ems_tracker_admin.trackHistory.view.TrackHistoryViewFragment">
+    android:paddingLeft="@dimen/left_padding"
+    android:paddingRight="@dimen/right_padding"
+    tools:context="co.original.codigo.ems_tracker_admin.trackHistory.view.TrackHistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <fragment
+                    android:id="@+id/mapHistoryTrack"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/mapHistoryTrack"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editText7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Fecha Inicial"
+                            android:inputType="date" />
+
+                        <EditText
+                            android:id="@+id/editText6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Fecha Final"
+                            android:inputType="date" />
+
+                        <EditText
+                            android:id="@+id/editText8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="ID Vehiculo"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Buscar Historial" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
 
 </FrameLayout>

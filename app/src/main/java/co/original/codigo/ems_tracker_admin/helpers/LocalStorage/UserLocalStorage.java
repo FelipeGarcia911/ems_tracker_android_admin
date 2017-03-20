@@ -1,11 +1,10 @@
-package co.original.codigo.armeniadenunciaapp.helpers.LocalStorage;
+package co.original.codigo.ems_tracker_admin.helpers.LocalStorage;
 
 import android.util.Log;
 
 import com.google.gson.Gson;
 
-import co.original.codigo.armeniadenunciaapp.domain.SharedPreferencesHelper;
-import co.original.codigo.armeniadenunciaapp.entities.UserObject;
+import co.original.codigo.ems_tracker_admin.models.UserObject;
 
 public class UserLocalStorage {
 

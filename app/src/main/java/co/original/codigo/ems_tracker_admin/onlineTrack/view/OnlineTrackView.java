@@ -1,8 +1,15 @@
 package co.original.codigo.ems_tracker_admin.onlineTrack.view;
 
-/**
- * Created by Felipe Garcia on 19/03/2017 - 11:30 AM.
- */
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public interface OnlineTrackView {
+
+    Marker addMarkerToMap(MarkerOptions markerOptions);
+    void centerMap(Double latitude, Double longitude, float mapZoom);
+    void clearMap();
+
+    void updateConnectionText(String string);
+    void updateConnectionColor(String color);
+
 }

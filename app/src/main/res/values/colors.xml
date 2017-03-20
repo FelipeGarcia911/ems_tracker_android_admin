@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="redConnStatus">#FF4081</color>
+    <color name="greenConnStatus">#FF4081</color>
+    <color name="grayConnStatus">#FF4081</color>
+    <color name="whiteConnStatus">#FF4081</color>
+
 </resources>
